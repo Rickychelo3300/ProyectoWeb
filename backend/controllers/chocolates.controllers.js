@@ -2,6 +2,7 @@
 var Chocolate=require('../models/chocolate');
 var fs=require('fs');
 var path=require('path');
+
 var controller = {
     //Inicio
     getInicio:function(req,res){
@@ -15,10 +16,11 @@ var controller = {
         var params=req.body;
 
         chocolate.nombre=params.nombre;
-        cholate.tipo=params.tipo;
-        chocolate.imagen=null;
-        chocolate.id=params.id;
         chocolate.precio=params.precio;
+        chocolate.tipo=params.tipo;
+        chocolate.descripcion=params.descripcion;
+        chocolate.imagen=null;
+                
 
         chocolate.save((err,chocolateGuardado)=>{
             if (err) return res.status(500).send({message:"Error al guardar el chocolate"});
@@ -39,7 +41,7 @@ var controller = {
         var chocolateId=req.params.id;
         if(chocolateId==null) return res.status(404).send({message:"El chocolate no existe"});
 
-        Chocolate.findById(peliculaId,(err,chocolateG)=>{
+        Chocolate.findById(chocolateId,(err,chocolateG)=>{
             if (err) return res.status(500).send({message:"Error al recuperar los datos"});
             if(!chocolateG) return res.status(404).send({message:'El chocolate no existe'});
             return res.status(200).send({chocolateG});
@@ -51,8 +53,8 @@ var controller = {
 
         Chocolate.findByIdAndRemove(chocolateId,(err,chocolateD)=>{
             if (err) return res.status(500).send({message:"Error al eliminar los datos"});
-            if(!chocolateD) return res.status(404).send({message:'No se puede eliminar el cholate'});
-            return res.status(200).send({peliculaD});
+            if(!chocolateD) return res.status(404).send({message:'No se puede eliminar el chocolate'});
+            return res.status(200).send({chocolateD});
         })
     },
     //Modificar un chocolate
@@ -61,7 +63,7 @@ var controller = {
         var update=req.body;
 
         Chocolate.findByIdAndUpdate(chocolateId,update,{new:true},(err,chocolateU)=>{
-            if (err) return res.status(500).send({message:"Error al actulizar los datos"});
+            if (err) return res.status(500).send({message:"Error al actualizar los datos"});
             if(!chocolateU) return res.status(404).send({message:'No se puede actualizar los datos del chocolate'});
             return res.status(200).send({chocolateU});
         })
@@ -75,7 +77,7 @@ var controller = {
             var filePath=req.files.imagen.path;
             var file_split=filePath.split('\\');
             var fileName=file_split[1];
-            var extSplit=fileName.split('\.');
+            var extSplit=fileName.split('\.'); //Ojo acá
             var fileExt=extSplit[1];
             if(fileExt=='png'||fileExt=='jpg'||fileExt=='jpeg'||fileExt=='gif'){
                 Chocolate.findByIdAndUpdate(chocolateId,{imagen:fileName},{new:true},(err,imagenU)=>{
@@ -85,15 +87,12 @@ var controller = {
                 });
             }else{
                 fs.unlink(filePath,(err)=>{
-                    return res.status(200).send({message:"La extensión no es valida"});
+                    return res.status(200).send({message:"La extensión no es válida"});
                 })
             }
-
         }else{
             return res.status(200).send({message:fileName});
-
         }
-
     },
     //Obtener una imagen
     getImage:function(req,res){

@@ -1,0 +1,9 @@
+<h2>CHOCOLATES</h2>
+    <ul>
+    <li *ngFor="let chocolate of chocolates">
+        <a [routerLink]="['/chocolate',chocolate._id]">
+            <img src="{{url+'get-imagen/'+chocolate.imagen}}" *ngIf="chocolate.imagen">
+            <h3>{{chocolate.nombre}}-{{chocolate.precio}}</h3>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,30 @@
+<h2>DETALLE CHOCOLATE</h2>
+<div class="container" *ngIf="chocolate">
+    <div class="imagen" *ngIf="chocolate.imagen">
+        <img src="{{url+'get-imagen/'+chocolate.imagen}}" *ngIf="chocolate.imagen">
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="data">
+    <h3>{{chocolate.nombre}}</h3>
+    <h3>{{chocolate.precio}}</h3>
+    <h3>{{chocolate.tipo}}</h3>
+    <h3>{{chocolate.descripcion}}</h3>
+    <p *ngIf="confirm==false">
+        <a [routerLink]="['/editar-chocolate',chocolate._id]" class="button-edit">Editar</a>
+        <a (click)="setConfirm(true)" class="button-delete">Eliminar</a>
+    </p>
+    <p *ngIf="confirm==true">
+        <span class="confirm">¿Estás seguro de eliminar el chocolate?</span>
+        <a (click)="setConfirm(false)" class="button-edit">Cancelar</a>
+        <a (click)="borrarChocolate(chocolate._id)" class="button-delete">Eliminar Definitivamente</a>
+    </p>
+</div>
+<!--
+public _id: string,
+        public nombre: string,
+        public precio: number,
+        public tipo:string,
+        public descripcion:string,
+        public imagen: string
+-->

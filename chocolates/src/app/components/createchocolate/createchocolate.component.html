@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="message success" *ngIf="status=='success'">
+        El chocolate fue guardado exitosamente, puede verlo <a [routerLink]="['/chocolate', idGuardado]">aquí.</a> 
+    </div>
+    <div class="message failed" *ngIf="status=='failed'">
+        No fue posible guardar el chocolate
+    </div>
+    <h2>{{titulo}}</h2>
+    <form #chocolateForm="ngForm" (ngSubmit)="guardarChocolate(chocolateForm)">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="chocolate.nombre" required>
+            <span *ngIf="nombre.touched && !nombre.valid">
+                Nombre Obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" #precio="ngModel" [(ngModel)]="chocolate.precio" required>
+        </p>
+        <p>
+            <label for="tipo">Tipo</label>
+            <input type="text" name="tipo" #tipo="ngModel" [(ngModel)]="chocolate.tipo" required>
+            <span *ngIf="tipo.touched && !tipo.valid">
+                Tipo Obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="descripcion">Descripción</label>
+            <input type="text" name="descripcion" #descripcion="ngModel" [(ngModel)]="chocolate.descripcion" required>
+            <span *ngIf="descripcion.touched && !descripcion.valid">
+                Descripción Obligatoria
+            </span>
+        </p>
+        <p>
+            <label for="imagen">Imagen</label>
+            <span *ngIf="chocolate.imagen" style="float:none">
+                <img src="{{url+'get-imagen/'+chocolate.imagen}}" style="width: 100px">
+            </span>
+            <input type="file" #archivoImagen placeholder="Seleccionar Imagen" (change)="imagenChangeEvent($event)">
+        </p>
+        <input type="submit" value="GUARDAR" [disabled]="!chocolateForm.form.valid">
+    </form>
+</div>

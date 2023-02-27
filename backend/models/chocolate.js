@@ -7,6 +7,7 @@ var chocolateSchema=Schema({
     precio: Number,
     tipo: String,
     id: String,
+    descripcion: String,
     imagen: String
 })
 module.exports=mongoose.model('Chocolate',chocolateSchema);
