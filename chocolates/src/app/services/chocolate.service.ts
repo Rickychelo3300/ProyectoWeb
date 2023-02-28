@@ -28,7 +28,7 @@ export class ChocolateService{
     }
     //Ver Chocolate
     //http://localhost:3700/chocolate/63faae506e496be9d8078a23
-    getChocolate(id:string):Observable<any>{
+    getChocolate(id:String):Observable<any>{
         let headers=new HttpHeaders().set('Content-Type', 'application/json');
         return this._http.get(this.url+'chocolate/'+id,{headers:headers});
     }

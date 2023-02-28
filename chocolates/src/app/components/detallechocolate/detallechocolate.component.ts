@@ -21,7 +21,7 @@ export class DetallechocolateComponent implements OnInit {
     private _route: ActivatedRoute
   ){
     this.url=Global.url;
-    this.chocolate = new Chocolate('','',2.5,'','',''); //id, nombre, precio, tipo, descripcion, imagen
+    this.chocolate = new Chocolate("","",3,"","",""); //id, nombre, precio, tipo, descripcion, imagen
     this.confirm=false; 
   }
   
@@ -29,15 +29,17 @@ export class DetallechocolateComponent implements OnInit {
     this._route.params.subscribe(params=>{
       let id=params['id'];
        this.getChocolate(id);
+       console.log("ID: ",id);
     });
   }
 
   getChocolate(id:String){
     console.log(id);
     console.log(id.toString());
-    this._chocolateService.getChocolate(id.toString()).subscribe(
+    this._chocolateService.getChocolate(id).subscribe(
       response=>{
-        this.chocolate=response.chocolate;
+        this.chocolate=response.chocolateG;
+        console.log("Respuesta",response);
       },
       error=>{
         console.log(<any>error);
