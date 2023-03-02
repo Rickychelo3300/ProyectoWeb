@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Footer #3b</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pie.component.css">
-</head>
-<body>
+
     <footer class="footer">
         <div class="pattern-light"></div>
         <div class="radial"></div>
         <div class="footer-menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a [routerLink]="['/inicio']">Inicio</a></li>
+            <li><a [routerLink]="['/chocolates']">Chocolates</a></li>
+            <li><a [routerLink]="['/guardar-chocolate']">Guardar Chocolate</a></li>
+            <li><a [routerLink]="['/contacto']">Contacto</a></li>
             </ul>
         </div>
         <div class="copyright">
@@ -29,6 +19,4 @@
             <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-</body>
-</html>
 

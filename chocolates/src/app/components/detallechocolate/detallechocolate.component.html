@@ -15,7 +15,7 @@
         <a (click)="setConfirm(true)" class="button-delete">Eliminar</a>
     </p>
     <p *ngIf="confirm==true">
-        <span class="confirm">¿Estás seguro de eliminar el chocolate?</span>
+        <span class="confirm">¿Estás seguro de eliminar el chocolate?</span><br>
         <a (click)="setConfirm(false)" class="button-edit">Cancelar</a>
         <a (click)="borrarChocolate(chocolate._id)" class="button-delete">Eliminar Definitivamente</a>
     </p>

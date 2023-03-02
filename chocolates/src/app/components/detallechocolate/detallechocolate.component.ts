@@ -52,9 +52,10 @@ export class DetallechocolateComponent implements OnInit {
   borrarChocolate(id:String){
     this._chocolateService.deleteChocolate(id.toString()).subscribe(
       response=>{
-        if(response.chocolate){
+        //if(response.chocolate){
           this._router.navigate(['/chocolates']);
-        }
+          console.log(this.chocolate);
+        //}
       },
       error=>{
         console.log(<any>error);
