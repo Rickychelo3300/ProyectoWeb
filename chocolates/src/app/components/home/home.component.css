@@ -1,0 +1,785 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 1440px;
+    height: 3300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .inicio {
+    width: 100%;
+    height: 3567px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .fondo1 {
+    width: 100%;
+    height: 4286px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .circuloV {
+    position: absolute;
+    width: 1011px;
+    height: 1019px;
+    left: 551px;
+    top: 4px;
+    background: #D9FBCD;
+    opacity: 0.8;
+    filter: blur(239.5px);
+  }
+  .img1 {
+    width: 729px;
+    height: 599px;
+    background: url("../../../assets/img/v18_376.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 132px;
+    left: 700px;
+    overflow: hidden;
+  }
+  .tituloInicio {
+    width: 554px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 166px;
+    left: 93px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 44px;
+    opacity: 1;
+    text-align: left;
+  }
+  .textoInicio {
+    width: 428px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 318px;
+    left: 96px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+  }
+  .botonOrdenar {
+    width: 201px;
+    height: 50px;
+    background: rgba(39,39,39,1);
+    padding: 10px 30px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 474px;
+    left: 93px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+  }
+  .botonOrdenar:hover {
+    background-color: rgba(49,49,49,1);
+  }
+  .ordenar {
+    width: 141px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .botonProductos {
+    width: 161px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 30px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 474px;
+    left: 327px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+  }
+  .botonProductos:hover {
+    background-color: darkgray;
+  }
+  .productos {
+    width: 101px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .seleccion {
+    width: 100%;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 827px;
+    left: 85px;
+    overflow: hidden;
+  }
+  .tituloSeleccion {
+    width: 603px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+  }
+  .textoSeleccion {
+    width: 606px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 31px;
+    left: 715px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .seleccionContainer {
+    width: 100%;
+    height: 418px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 71px;
+    opacity: 1;
+    position: absolute;
+    top: 1043px;
+    left: 100px;
+    overflow: hidden;
+  }
+  /*Primer elemento*/
+  .imgS1 {
+    width: 231px;
+    height: 418px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  /*Este sí*/
+  .imagen1 {
+    width: 231px;
+    height: 328px;
+    background: url("../../../assets/img/v18_389.png"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.20000000298023224);
+    overflow: hidden;
+  }
+  .textoS1 {
+    width: 224px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 352px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .txt1 {
+    width: 224px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  /*Segundo Elemento*/
+  .imgS2 {
+    width: 231px;
+    height: 418px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 302px;
+    overflow: hidden;
+  }
+  .imagen2 {
+    width: 231px;
+    height: 328px;
+    background: url("../../../assets/img/v18_393.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.20000000298023224);
+    overflow: hidden;
+  }
+  .textoS2 {
+    width: 224px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 352px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .txt2 {
+    width: 224px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  /*Tercer Elemento*/
+  .imgS3 {
+    width: 231px;
+    height: 418px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 604px;
+    overflow: hidden;
+  }
+  .imagen3 {
+    width: 231px;
+    height: 328px;
+    background: url("../../../assets/img/v18_397.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.20000000298023224);
+    overflow: hidden;
+  }
+  .textoS3 {
+    width: 224px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 352px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .txt3 {
+    width: 224px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  /*Cuarto Elemento*/
+  .imgS4 {
+    width: 231px;
+    height: 418px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 906px;
+    overflow: hidden;
+  }
+  .imagen4 {
+    width: 231px;
+    height: 328px;
+    background: url("../../../assets/img/v18_401.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.20000000298023224);
+    overflow: hidden;
+  }
+  .textoS4 {
+    width: 224px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 352px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .txt4 {
+    width: 224px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  /*2 ítems*/
+  .info {
+    width: 100%;
+    height: 922px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 1557px;
+    left: 79px;
+    overflow: hidden;
+  }
+  .primerElemento {
+    width: 100%;
+    height: 347px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .primerElementoInfo {
+    width: 621px;
+    height: 243px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .tituloPrimerElemento {
+    width: 621px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 147px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .textoPrimerElemento {
+    width: 527px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Medium;
+    font-size: 44px;
+    opacity: 1;
+    text-align: left;
+  }
+  .imgPrimerElemento {
+    width: 617px;
+    height: 347px;
+    background: url("../../../assets/img/v18_409.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 665px;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1599999964237213);
+    overflow: hidden;
+  }
+  .segundoElemento {
+    width: 100%;
+    height: 347px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 475px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .imgSegundoElemento {
+    width: 617px;
+    height: 347px;
+    background: url("../../../assets/img/v18_411.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1599999964237213);
+    overflow: hidden;
+  }
+  .segundoElementoInfo {
+    width: 524px;
+    height: 307px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 661px;
+    overflow: hidden;
+  }
+  .tituloSegundoElemento {
+    width: 524px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 147px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .textoSegundoElemento {
+    width: 507px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Medium;
+    font-size: 44px;
+    opacity: 1;
+    text-align: left;
+  }
+  /*Parte final*/
+  
+  .containerFin {
+    height: 367px;
+    width: 1440px;
+    background: rgba(216,251,205,1);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 40px;
+    position: absolute;
+    top: 2400px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .elementosFin{  
+    width: 919px;
+    height: 221px;
+    background: rgba(216,251,205,1);
+    opacity: 1;
+    position: relative;
+    top: 73px;
+    left: 261px;
+    overflow: hidden;
+  }
+  .tituloFin {
+    width: 846px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 0px;
+    left: 36px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  .textoFin {
+    width: 919px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Medium;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .botonContactos {
+    width: 151px;
+    height: 56px;
+    background: rgba(39,39,39,1);
+    padding: 16px 28px;
+    opacity: 1;
+    position: absolute;
+    top: 150px;
+    left: 380px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0.4117647111415863, 0.3176470696926117, 1, 0.05000000074505806);
+    overflow: hidden;
+  }
+  .botonContactos:hover {
+    background-color: rgba(49,49,49,1);
+  }
+  .contactos {
+    width: 95px;
+    color: rgba(240,253,244,1);
+    position: absolute;
+    top: 14px;
+    left: 28px;
+    font-family: Poppins;
+    font-weight: Medium;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .containerEnd {
+    width: 1440px;
+    height: 682px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2770px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .linea1 {
+    width: 142px;
+    height: 98px;
+    background: linear-gradient(rgba(225,251,205,1), rgba(255,255,255,1));
+    opacity: 1;
+    position: absolute;
+    top: 102px;
+    left: 207px;
+  }
+  .linea2 {
+    width: 142px;
+    height: 98px;
+    background: linear-gradient(rgba(219,251,205,1), rgba(255,255,255,1));
+    opacity: 1;
+    position: absolute;
+    top: 300px;
+    left: 1068px;
+  }
+  .tituloEnd {
+    width: 977px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 168px;
+    left: 231px;
+    font-family: Poppins;
+    font-weight: SemiBold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .imgKharo {
+    width: 88px;
+    height: 88px;
+    opacity: 1;
+    position: absolute;
+    left: 675px;
+    top: 370px;
+    border-radius: 50%;
+  }
+  .imgKharo img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: block;
+    }
+  .nombreKharo {
+    width: 192px;
+    color: rgba(74,29,31,1);
+    position: absolute;
+    left: 623px;
+    top: 482px;
+    font-family: Poppins;
+    font-weight: SemiBold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+  }
+  .infoKharo {
+    width: 271px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    left: 584px;
+    top: 522px;
+    font-family: Poppins;
+    font-weight: Medium;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+  }
+  .quotes {
+    width: 64px;
+    height: 22px;
+    background: rgba(216,251,205,1);
+    padding: 2px 8px;
+    margin: 2px;
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 680px;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    box-shadow: 0px 1px 2px rgba(0.4117647111415863, 0.3176470696926117, 1, 0.05000000074505806);
+    overflow: hidden;
+  }
+  .quotesTexto {
+    width: 48px;
+    color: rgba(74,29,31,1);
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    font-family: Poppins;
+    font-weight: Medium;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .circulo1 {
+    width: 60px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    left: 689px;
+    top: 582px;
+    overflow: hidden;
+  }
+  .circulop {
+    width: 12px;
+    height: 12px;
+    background: rgba(39,39,39,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    border-radius: 50%;
+  }

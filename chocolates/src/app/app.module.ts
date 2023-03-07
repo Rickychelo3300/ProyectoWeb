@@ -12,6 +12,7 @@ import { EncabezadoComponent } from './components/encabezado/encabezado.componen
 import { PieComponent } from './components/pie/pie.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {HttpClientModule} from '@angular/common/http';
     ContactoComponent,
     HomeComponent,
     EncabezadoComponent,
-    PieComponent
+    PieComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

@@ -14,12 +14,15 @@
     padding: 0 20px;
     height: 100%;
     box-sizing: border-box;
+    margin-right: 467px;
 }
 
 .Logo {
     width: auto;
+    left: 100px;
     display: block;
     height: 50px;
+    margin-left: 116px;
 }
   
 ul {
