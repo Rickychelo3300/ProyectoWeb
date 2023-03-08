@@ -34,23 +34,23 @@
             </div>
         </div>
         <div class="menu">
-            <span class="inicio">
+            <span class="inicio" (click)="scrollToTopBtnr()">
                 <a [routerLink]="['/inicio']">
                 Inicio
                 </a>
             </span>
-            <span class="productos">
-                <a [routerLink]="['/inicio']">
+            <span class="productos" (click)="scrollToTopBtnr()">
+                <a [routerLink]="['/inicio']" >
                     Productos
                     </a>
             </span>
-            <span class="aboutUs">
-                <a [routerLink]="['/inicio']">
+            <span class="aboutUs" (click)="scrollToTopBtnr()">
+                <a [routerLink]="['/aboutUs']">
                     About US
                 </a>
             </span>
-            <span class="contactos">
-                <a [routerLink]="['/inicio']">
+            <span class="contactos" (click)="scrollToTopBtnr()">
+                <a [routerLink]="['/contacto']">
                     Contactos
                 </a>    
             </span>

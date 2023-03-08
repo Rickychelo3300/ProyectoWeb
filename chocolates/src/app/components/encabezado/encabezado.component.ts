@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent {
-
+  scrollToTopBtnr(){
+    window.scrollTo({
+      top:0,
+      left:0,
+      behavior: 'smooth'
+    })
+  }
 }
