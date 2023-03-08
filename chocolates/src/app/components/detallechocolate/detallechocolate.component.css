@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .data {
+    width: 100%;
+    height: 774px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 85px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .nombreProducto {
+    width: 291px;
+    height: 85px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+    left: 795px;
+    overflow: hidden;
+  }
+  .textoNombreProducto {
+    width: 291px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .Producto {
+    width: 116px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    font-weight: bold;
+    top: 50px;
+    left: 654px;
+    overflow: hidden;
+  }
+  .textoProducto {
+    width: 116px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .precioProducto {
+    width: 83px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 795px;
+    overflow: hidden;
+  }
+  .textoPrecioProducto {
+    width: 83px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .Precio {
+    width: 116px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 654px;
+    overflow: hidden;
+  }
+  .textoPrecio {
+    width: 116px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .tipoProducto {
+    width: 120px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 150px;
+    left: 795px;
+    overflow: hidden;
+  }
+  .textoTipoProducto {
+    width: 120px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .tipo {
+    width: 116px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    left: 654px;
+    overflow: hidden;
+  }
+  .textoTipo {
+    width: 116px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .descripcionProducto {
+    width: 100%;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    overflow: hidden;
+  }
+  .textoDescripcionProducto {
+    width: 100%;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .descripcion {
+    width: 135px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 654px;
+    overflow: hidden;
+  }
+  .textoDescripcion {
+    width: 135px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .containerImg {
+    width: 352px;
+    height: 426px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 200px;
+    left: 225px;
+    overflow: hidden;
+}
+.imagen {
+    width: auto;
+    height: 426px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.20000000298023224);
+    overflow: hidden;
+    border: 1px solid black;
+}
+.imagen img{
+    height: 426px;
+    width: auto;
+}
+
+h2 {
+    width: 544px;
+    color: rgba(39,39,39,1);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 44px;
+    opacity: 1;
+    text-align: left;
+  }
+  
