@@ -24,10 +24,10 @@ export class CreatechocolateComponent implements OnInit {
     private _chocolateService: ChocolateService,
     private _cargarService: CargarService
   ){
-    this.titulo="GUARDAR CHOCOLATE";
+    this.titulo="REGISTRAR UN NUEVO PRODUCTO";
     this.url=Global.url;
-    this.chocolate=new Chocolate('','',3.50,'','',''); //id, nombre, precio, tipo, descripcion, imagen
-    this.chocolateGuardar=new Chocolate('','',3.50,'','',''); //id, nombre, precio, tipo, descripcion, imagen
+    this.chocolate=new Chocolate('','',0,'','',''); //id, nombre, precio, tipo, descripcion, imagen
+    this.chocolateGuardar=new Chocolate('','',0,'','',''); //id, nombre, precio, tipo, descripcion, imagen
     this.status="";
     this.idGuardado="";
     this.archivosParaCargar=[];

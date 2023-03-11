@@ -32,6 +32,12 @@ export class ChocolateService{
         let headers=new HttpHeaders().set('Content-Type', 'application/json');
         return this._http.get(this.url+'chocolate/'+id,{headers:headers});
     }
+    //Ver Chocolate por nombre
+    //http://localhost:3700/chocolate/Ricardo
+    getChocolatePorNombre(nombre:String):Observable<any>{
+        let headers=new HttpHeaders().set('Content-Type', 'application/json');
+        return this._http.get(this.url+'chocolateN/'+nombre,{headers:headers});
+    }
     //Editar Chocolate
     //http://localhost:3700/editar-chocolate/63faae506e496be9d8078a23
     updateChocolate(chocolate:Chocolate):Observable<any>{

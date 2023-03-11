@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ChocolateService } from '../../services/chocolate.service';
 
 @Component({
   selector: 'app-encabezado',
@@ -6,11 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent {
-  scrollToTopBtnr(){
+
+  scrollToTopBtnr() {
     window.scrollTo({
-      top:0,
-      left:0,
+      top: 0,
+      left: 0,
       behavior: 'smooth'
-    })
+    });
   }
+
 }

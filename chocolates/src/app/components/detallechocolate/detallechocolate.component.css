@@ -263,4 +263,37 @@ h2 {
     opacity: 1;
     text-align: left;
   }
+  p {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .button-edit {
+    background-color: #2196f3;
+    margin-right: 10px;
+    position: absolute;
+    left: 708px;
+    top: 255px;
+  }
+  
+  .button-delete {
+    background-color: #f44336;
+    position: absolute;
+    left: 808px;
+    top: 255px;
+  }
+  
+  .confirm {
+    color: #f44336;
+    font-weight: bold;
+  }
   

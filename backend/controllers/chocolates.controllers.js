@@ -47,6 +47,16 @@ var controller = {
             return res.status(200).send({chocolateG});
         })
     },
+    //Obtener un chocolate por nombre
+    getChocolatePorNombre: function(req, res) {
+        var nombre = req.params.nombre;
+      
+        Chocolate.find({ nombre: nombre }, function(err, chocolates) {
+          if (err) return res.status(500).send({ message: "Error al recuperar los datos" });
+          if (chocolates.length === 0) return res.status(404).send({ message: "No se encontraron chocolates con ese nombre" });
+          return res.status(200).send({ chocolates });
+        });
+      },
     //Eliminar un chocolate
     deleteChocolate:function(req,res){
         var chocolateId=req.params.id;

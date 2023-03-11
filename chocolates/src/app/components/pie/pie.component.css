@@ -1,110 +1,3 @@
-/*
-/* Estilos generales del footer 
-.footer {
-  position: relative;
-  background-color: #242424;
-  width: 1440px;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  text-align: center;
-  padding: 40px 0;
-  margin-top: 60px;
-}
-
-/* Patrón de fondo 
-.pattern-light {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #f7f8f9;
-  opacity: 0.1;
-}
-
-/* Efecto radial 
-.radial {
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  top: -10%;
-  left: -10%;
-  
-  background-image: radial-gradient(circle at 50% 50%,  #fff 0%, #fff 50%, #d9fbc7 50%, #d9fbc7 100%);
-  opacity: 0.2;
-}
-
-/* Lista de enlaces 
-.footer-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.footer-menu li {
-  margin: 0 15px;
-}
-
-.footer-menu li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-menu li a:hover {
-  color: #ccc;
-}
-
-/* Texto de derechos reservados 
-.footer p {
-  margin: 0;
-}
-
-/* Iconos de redes sociales
-.social-media {
-  margin-top: 20px;
-}
-
-.social-media a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #fff;
-  background-color: #333;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  transition: background-color 0.3s;
-}
-
-.social-media a:hover {
-  background-color: #444;
-}
-
-/* Estilos específicos para cada icono de red social 
-.facebook {
-  background-color: #3b5998;
-}
-
-.twitter {
-  background-color: #1da1f2;
-}
-
-.instagram {
-  background-color: #c13584;
-}
-
-.social-media i {
-  font-size: 20px;
-}
-*/
 
 * {
   box-sizing: border-box;
@@ -115,7 +8,7 @@ body {
 .container {
   height: 380px;
   width: 1440px;
-  background: rgba(255,255,255,1);
+  background: rgb(230, 152, 152);
   opacity: 1;
   position: relative;
   top: 0px;
@@ -125,7 +18,7 @@ body {
 .imagen {
   width: 100%;
   height: 384px;
-  background: rgba(247,248,249,1);
+  background: rgba(230, 152, 152,1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -135,7 +28,7 @@ body {
 .logo {
   width: 100%;
   height: 394px;
-  background: rgba(216,251,205,1);
+  background: rgba(230, 152, 152,1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -151,7 +44,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 90px;
-  left: 461px;
+  left: 700px;
   overflow: hidden;
 }
 .menu a{
@@ -219,10 +112,10 @@ body {
   text-align: left;
 }
 .logo img {
-  width: 126px;
-  height: 63px;
+  width: auto;
+  height: 220px;
   position: absolute;
-  top: 63px;
+  top: 0px;
   left: 240px;
 }
 .facebook {

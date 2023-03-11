@@ -1,9 +1,9 @@
 <div class="container">
     <div class="message success" *ngIf="status=='success'">
-        El chocolate fue guardado exitosamente, puede verlo <a [routerLink]="['/chocolate', idGuardado]">aquí.</a> 
+        El Pastel o cupcake fue guardado exitosamente, puede verlo <a [routerLink]="['/chocolate', idGuardado]">aquí.</a> 
     </div>
     <div class="message failed" *ngIf="status=='failed'">
-        No fue posible guardar el chocolate
+        No fue posible guardar el Chocolate o cupcake
     </div>
     <h2>{{titulo}}</h2>
     <form #chocolateForm="ngForm" (ngSubmit)="guardarChocolate(chocolateForm)">

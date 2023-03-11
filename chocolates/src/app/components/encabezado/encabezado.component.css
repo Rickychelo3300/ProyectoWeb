@@ -21,7 +21,7 @@
     width: auto;
     left: 100px;
     display: block;
-    height: 50px;
+    height: 200px;
     margin-left: 116px;
 }
   
@@ -51,11 +51,11 @@ a {
 }
 /* this is a recreation of twitter search in css */
 .form {
-    --input-text-color: #fff;
-    --input-bg-color:  rgba(49,49,49,1);
+    --input-text-color: rgba(230, 152, 152,1);
+    --input-bg-color:  rgba(230, 152, 152,1);
     --focus-input-bg-color: transparent;
-    --text-color: #949faa;
-    --active-color: #1b9bee;
+    --text-color: white;
+    --active-color: rgba(230, 152, 152,1);
     --width-of-input: 300px;
     --padding-right:50px;
     --inline-padding-of-input: 1.2em;

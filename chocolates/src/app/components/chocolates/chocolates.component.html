@@ -1,9 +1,13 @@
-<h2>CHOCOLATES</h2>
-    <ul>
-    <li *ngFor="let chocolate of chocolates">
-        <a [routerLink]="['/chocolate',chocolate._id]">
-            <img src="{{url+'get-imagen/'+chocolate.imagen}}" *ngIf="chocolate.imagen">
-            <h3>{{chocolate.nombre}}-{{chocolate.precio}}</h3>
-        </a>
-    </li>
+<div class="container">
+    <h2 class="title">PRODUCTOS DISPONIBLES</h2>
+<ul class="chocolates-list">
+  <li class="chocolate" *ngFor="let chocolate of chocolates">
+    <a [routerLink]="['/chocolate',chocolate._id]">
+      <div class="chocolate-image">
+        <img src="{{url+'get-imagen/'+chocolate.imagen}}" *ngIf="chocolate.imagen">
+      </div>
+      <h3 class="chocolate-name">{{chocolate.nombre}} - ${{chocolate.precio}}</h3>
+    </a>
+  </li>
 </ul>
+</div>

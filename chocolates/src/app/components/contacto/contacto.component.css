@@ -6,7 +6,7 @@
   }
   .container {
     width: 1440px;
-    height: 2034px;
+    height: 2500px;
     background: rgba(255,255,255,1);
     opacity: 1;
     position: relative;
@@ -87,7 +87,7 @@
   .imgContainer1 {
     width: 703px;
     height: 393px;
-    background: url("../../../assets/img/v27_290.png");
+    background: url("../../../assets/img/centro3.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -106,7 +106,7 @@
     width: 100%;
     color: rgba(39,39,39,1);
     position: absolute;
-    top: 1293px;
+    top: 1230px;
     left: 26px;
     font-family: Poppins;
     font-weight: Medium;
@@ -382,6 +382,93 @@
     opacity: 1;
     text-align: center;
   }
+  .formularioContacto{
+    width: 1470px;
+    height: 682px;
+    position: absolute;
+    top: 1370px;
+    left: 0px;
+    overflow: hidden;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+  }
+  .tituloFormulario{
+    top: 1320px;
+    left: 200px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+  }
+  .tituloMapa{
+    top: 1320px;
+    left: 450px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+  }
+  .mapa {
+    flex-basis: 50%;
+    height: 400px;
+    width: auto;
+    margin-left: 1em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+  }
+  .formulario {
+      display: flex;
+      justify-content: center;
+      margin-left: 200px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      padding-right: 1em;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    label {
+      margin-top: 1em;
+      display: block;
+      text-align: left;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 0.5em;
+      margin-top: 0.5em;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      width: 300px;
+      height: 50px;
+    }
+    
+    input[type="submit"] {
+      margin-left:100px;
+      padding: 0.5em 1em;
+      width: 100px;
+      height: auto;
+      font-size: 20px;
+      margin-top: 1em;
+      background-color: rgba(230, 152, 152,1);;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: rgb(160, 88, 88);
+    }
+
   .containerEnd {
     width: 1440px;
     height: 682px;
@@ -390,28 +477,31 @@
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 1380px;
+    top: 1800px;
     left: 0px;
     overflow: hidden;  
     border-width: 5px solid black;
   }
   .linea1 {
     width: 142px;
-    height: 98px;
-    background: linear-gradient(rgba(225,251,205,1), rgba(255,255,255,1));
-    opacity: 1;
+    height: 10px;
+    background: linear-gradient(rgba(230, 152, 152,1), rgba(74,29,31,1));
+    opacity: 0.6;
     position: absolute;
-    top: 102px;
-    left: 207px;
-  }
+    top: 200px;
+    left: 200px;
+}
+
   .linea2 {
     width: 142px;
-    height: 98px;
-    background: linear-gradient(rgba(219,251,205,1), rgba(255,255,255,1));
+    height: 10px;
+    background:linear-gradient(rgba(230, 152, 152,1), rgba(74,29,31,1));
     opacity: 1;
     position: absolute;
-    top: 300px;
+    top: 335px;
     left: 1080px;
+    opacity: 0.6;
+    
   }
   .tituloEnd {
     width: 977px;
@@ -432,7 +522,7 @@
     opacity: 1;
     position: absolute;
     left: 675px;
-    top: 370px;
+    top: 400px;
     border-radius: 50%;
   }
   .imgKharo img {
@@ -446,7 +536,7 @@
     color: rgba(74,29,31,1);
     position: absolute;
     left: 623px;
-    top: 482px;
+    top: 495px;
     font-family: Poppins;
     font-weight: SemiBold;
     font-size: 24px;
@@ -458,7 +548,7 @@
     color: rgba(39,39,39,1);
     position: absolute;
     left: 584px;
-    top: 522px;
+    top: 575px;
     font-family: Poppins;
     font-weight: Medium;
     font-size: 18px;
@@ -468,7 +558,7 @@
   .quotes {
     width: 64px;
     height: 22px;
-    background: rgba(216,251,205,1);
+    background: rgba(230, 152, 152,1);
     padding: 2px 8px;
     margin: 2px;
     opacity: 1;
@@ -504,16 +594,16 @@
     opacity: 1;
     position: absolute;
     left: 689px;
-    top: 582px;
+    top: 640px;
     overflow: hidden;
   }
   .circulop {
     width: 12px;
     height: 12px;
-    background: rgba(39,39,39,1);
+    background: rgba(230, 152, 152,1);
     opacity: 1;
     position: absolute;
     top: 0px;
     left: 24px;
     border-radius: 50%;
-}
+  }

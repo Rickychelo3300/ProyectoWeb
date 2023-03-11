@@ -1,4 +1,4 @@
-<h2>DETALLE CHOCOLATE</h2>
+<h2>DETALLE DEL PASTEL</h2>
 <div class="containerImg" *ngIf="chocolate">
     <div class="imagen" *ngIf="chocolate.imagen">
         <img src="{{url+'get-imagen/'+chocolate.imagen}}" *ngIf="chocolate.imagen">
@@ -30,7 +30,8 @@
     <div class="descripcion">
         <span class="textoDescripcion">Descripción: </span>
     </div>
-    <!--
+
+    <div class="botonesI">
     <p *ngIf="confirm==false">
         <a [routerLink]="['/editar-chocolate',chocolate._id]" class="button-edit">Editar</a>
         <a (click)="setConfirm(true)" class="button-delete">Eliminar</a>
@@ -40,7 +41,7 @@
         <a (click)="setConfirm(false)" class="button-edit">Cancelar</a>
         <a (click)="borrarChocolate(chocolate._id)" class="button-delete">Eliminar Definitivamente</a>
     </p>
-    -->
+</div>
 </div>
 <!--
 public _id: string,

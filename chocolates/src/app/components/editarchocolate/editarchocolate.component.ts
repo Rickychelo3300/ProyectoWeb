@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-editarchocolate',
   templateUrl: '../createchocolate/createchocolate.component.html',
-  styleUrls: ['./editarchocolate.component.css'],
+  styleUrls: ['../createchocolate/createchocolate.component.css'],
   providers: [ChocolateService, CargarService]
 })
 
@@ -28,7 +28,7 @@ export class EditarchocolateComponent implements OnInit {
     private _route: ActivatedRoute,
     private _router:Router
   ){
-    this.titulo="EDITAR CHOCOLATE";
+    this.titulo="MODIFICAR UN PRODUCTO";
     this.url=Global.url;
     this.chocolate=new Chocolate('','',3.50,'','',''); //id, nombre, precio, tipo, descripcion, imagen
     this.chocolateGuardar=new Chocolate('','',3.50,'','',''); //id, nombre, precio, tipo, descripcion, imagen
